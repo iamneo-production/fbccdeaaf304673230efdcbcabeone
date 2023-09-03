@@ -29,7 +29,7 @@ const ticTacToe = (element, index) => {
   for (let i = 0; i < conditions.length; i++) {
     const [a, b, c] = conditions[i];
     if (cells[a] !== "" && cells[a] === cells[b] && cells[a] === cells[c]) {
-      result.textContent = `Player ${currentPlayer} Wins!`;
+      result.textContent = `Player ${currentPlayer} Won 🎉`;
       btns.forEach((btn) => (btn.disabled = true));
       return;
     }
